@@ -50,6 +50,12 @@ VAGUE = [
     "hiring"
 ]
 
+@app.get("/")
+def root():
+    return {
+        "message": "SHL AI Recommendation API is running"
+    }
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
